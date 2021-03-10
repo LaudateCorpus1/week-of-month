@@ -168,11 +168,11 @@ class TestWeekForTime < Test::Unit::TestCase
     assert_equal Time.new(2012, 12, 8), Time.new(2012, 12, 7).ending_of_week
   end
 
-  def test_next_week
-    assert_equal Time.new(2012, 12, 8), Time.new(2012, 12, 1).next_week
-    assert_equal Time.new(2012, 12, 22), Time.new(2012, 12, 15).next_week
-    assert_equal Time.new(2013, 1, 5), Time.new(2012, 12, 29).next_week
-    assert_equal Time.new(2012, 12, 26), Time.new(2012, 12, 19).next_week
+  def test_wom_next_week
+    assert_equal Time.new(2012, 12, 8), Time.new(2012, 12, 1).wom_next_week
+    assert_equal Time.new(2012, 12, 22), Time.new(2012, 12, 15).wom_next_week
+    assert_equal Time.new(2013, 1, 5), Time.new(2012, 12, 29).wom_next_week
+    assert_equal Time.new(2012, 12, 26), Time.new(2012, 12, 19).wom_next_week
   end
 
   def test_previous_week
